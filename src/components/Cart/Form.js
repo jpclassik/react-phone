@@ -1,9 +1,14 @@
-import React from 'react'
-import { ButtonContainer } from '../Button'
+import React from 'react';
+import { ButtonContainer } from '../Button';
+import CartTotals from './CartTotals';
+
 export default function Form() {
   return (
     <div>
-  <form name='contact v1' method='post' data-netlify="true" onSubmit="submit" netlify>
+  <form name='contact v1' 
+  method="post" 
+  data-netlify="true" 
+  onSubmit="submit">
 
  <input type="hidden" name="form" value="contact v1" />
 
@@ -31,7 +36,9 @@ export default function Form() {
 
    </textarea>
  </div>
-    <ButtonContainer type='submit'>submit</ButtonContainer>
+    <ButtonContainer type='submit'
+    onClick={CartTotals}
+    >submit</ButtonContainer>
 
   </form>
 
