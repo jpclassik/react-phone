@@ -3,7 +3,7 @@ import { ButtonContainer } from '../Button'
 export default function Form() {
   return (
     <div>
-  <form name='contact v1' method='post' data-netlify="true" onSubmit="submit">
+  <form name='contact v1' method='post' data-netlify="true" onSubmit="submit" netlify>
 
  <input type="hidden" name="form" value="contact v1" />
 
@@ -28,7 +28,7 @@ export default function Form() {
  <div>
    <label>Current Address</label> <br />
    <textarea name='address' >
-     
+
    </textarea>
  </div>
     <ButtonContainer type='submit'>submit</ButtonContainer>
